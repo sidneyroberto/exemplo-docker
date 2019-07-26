@@ -1,2 +1,2 @@
 # exemplo-docker
-Exemplo de projeto MERN em contêineres [Docker](https://docker.com), orquestrados com Docker Compose.
+Exemplo de projeto MERN em contêineres [Docker](https://docker.com), orquestrados com [Docker Compose](https://docs.docker.com/compose/).
