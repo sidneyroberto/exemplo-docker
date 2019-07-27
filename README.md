@@ -3,38 +3,38 @@ Exemplo de projeto MERN em contêineres [Docker](https://docker.com), orquestrad
 
 Para executar instalar as dependências, execute os seguintes comandos:
 
-### `cd backend`
+##### `cd backend`
 
-### `npm i`
+##### `npm i`
 
-### `cd ../frontend`
+##### `cd ../frontend`
 
-### `npm i`
+##### `npm i`
 
 Para construir as imagens dos contêineres em modo de desenvolvimento, execute o seguinte comando (lembrando que todos os comandos do Docker devem ser executados a partir da raíz do projeto):
 
-### `docker-compose build`
+##### `docker-compose build`
 
 Para subir os contêineres em modo de desenvolvimento, execute o seguinte comando:
 
-### `docker-compose up`
+##### `docker-compose up`
 
 Alternativamente, caso queira subir os contêineres em modo detached (sem reter o terminal de linha de comando), execute o seguinte comando:
 
-### `docker-compose up -d`
+##### `docker-compose up -d`
 
 Para construir as imagens do contêineres em modo de produção, execute o seguinte comando:
 
-### `docker-compose -f docker-compose-prod.yml build`
+##### `docker-compose -f docker-compose-prod.yml build`
 
 Para subir os contêineres em modo de produção, execute o seguinte comando:
 
-### `docker-compose -f docker-compose-prod.yml up`
+##### `docker-compose -f docker-compose-prod.yml up`
 
 De forma análoga, você pode executar o comando acima com o parâmetro `-d` para executar em modo detached.
 
 Caso tenha subido os contêineres em modo detached, você pode visualizar os logs dos contêineres com o seguintes comando:
 
-### `docker-compose logs -f` (modo desenvolvimento)
+##### `docker-compose logs -f` (modo desenvolvimento)
 
-### `docker-compose -f docker-compose-prod.yml logs -f` (modo produção)
+##### `docker-compose -f docker-compose-prod.yml logs -f` (modo produção)
