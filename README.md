@@ -1,7 +1,7 @@
 # exemplo-docker
 Exemplo de projeto MERN em contêineres [Docker](https://docker.com), orquestrados com [Docker Compose](https://docs.docker.com/compose/).
 
-Você pode achar as instruções para a instalação do Docker e Docker compose em seu sistema operacional [aqui](https://docs.docker.com/install/) e [aqui](https://docs.docker.com/compose/install/).
+Você pode achar as instruções para a instalação do Docker e Docker Compose em seu sistema operacional [aqui](https://docs.docker.com/install/) e [aqui](https://docs.docker.com/compose/install/).
 
 Para executar instalar as dependências, execute os seguintes comandos:
 
