@@ -5,14 +5,13 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon"
+    "dev": "nodemon",
+    "start": "node app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {
-    "nodemon": "^1.19.1"
-  },
+  "devDependencies": {},
   "dependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",

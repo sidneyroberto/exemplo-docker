@@ -1,0 +1,25 @@
+version: '3.3'
+
+services:
+    mongodb:
+        image: mongo
+        ports:
+        - "27017:27017"
+    backend:
+        container_name: backend-prod
+        build:
+            context: ./backend/
+            dockerfile: Dockerfile-prod
+        ports:
+            - '3001:3001'
+        depends_on:
+        - mongodb
+    frontend-prod:
+        container_name: frontend-prod
+        build:
+            context: ./frontend/
+            dockerfile: Dockerfile-prod
+        ports:
+            - '80:80'
+        depends_on:
+            - backend

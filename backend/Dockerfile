@@ -1,10 +1,13 @@
-FROM node:10
-
-RUN mkdir -p /usr/src/app
+FROM node:latest
 
 WORKDIR /usr/src/app
 
-RUN npm i --save-dev nodemon
+COPY package*.json ./
 
-EXPOSE 3000
-CMD [ "npm", "start"]
+RUN npm i -g nodemon
+
+COPY . .
+
+EXPOSE 3001
+
+CMD ["npm", "run", "dev"]
